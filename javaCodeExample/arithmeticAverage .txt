@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        // put your code here
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        double count = 0;
+        double sumOfDivisible3 = 0;
+        double average;
+
+        for (int i = a; i <= b; i++) {
+            if (i % 3 == 0) {
+                sumOfDivisible3 += i;
+                count++;
+            }
+        }
+
+        average = sumOfDivisible3 / count;
+        System.out.println(average);
+    }
+}
